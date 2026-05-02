@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Freelancing portfolio of Tahsin Morshed Shakil — Excel, Academic Citation & SEO services on Fiverr. Hire a skilled freelancer from Bangladesh.">
+<meta name="keywords" content="Tahsin Morshed Shakil freelancer, TMSHAKIL Fiverr, Excel freelancer Bangladesh, SEO freelancer Chittagong, Citation expert Bangladesh">
+<meta name="author" content="Tahsin Morshed Shakil">
+<title>Freelancing Portfolio | Tahsin Morshed Shakil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#050d1a;--dark:#0a1628;--blue:#1a6fff;--blue-light:#4d8fff;--blue-glow:rgba(26,111,255,0.18);--cyan:#00c8ff;--white:#f0f5ff;--muted:#7a8fb0;--border:rgba(26,111,255,0.15);--card:rgba(15,32,64,0.7);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.7;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(26,111,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(26,111,255,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;background:rgba(5,13,26,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:var(--blue);letter-spacing:2px;text-decoration:none;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s;}
+.nav-links a:hover,.nav-links a.active{color:var(--blue-light);}
+.nav-cta{background:var(--blue)!important;color:#fff!important;padding:0.45rem 1.1rem!important;border-radius:4px;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;}
+
+.page-hero{padding:8rem 5% 3rem;position:relative;z-index:1;}
+.page-label{font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:0.6rem;animation:fadeUp 0.7s ease both;}
+.page-title{font-family:'Syne',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.1;margin-bottom:1rem;animation:fadeUp 0.8s ease 0.1s both;}
+.page-title span{color:var(--blue);}
+.page-desc{color:var(--muted);font-size:0.95rem;max-width:560px;animation:fadeUp 0.8s ease 0.2s both;}
+
+section{padding:4rem 5%;position:relative;z-index:1;}
+.section-label{font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:0.6rem;}
+.section-title{font-family:'Syne',sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:1rem;}
+.section-line{width:48px;height:3px;background:var(--blue);margin-bottom:2.5rem;border-radius:2px;}
+
+/* PDF DOWNLOAD BANNER */
+.pdf-banner{background:linear-gradient(135deg,rgba(26,111,255,0.15),rgba(0,200,255,0.08));border:1px solid rgba(26,111,255,0.3);border-radius:16px;padding:2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:3rem;}
+.pdf-text h3{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:0.4rem;}
+.pdf-text p{color:var(--muted);font-size:0.88rem;}
+.pdf-upload-hint{background:rgba(26,111,255,0.08);border:1px dashed rgba(26,111,255,0.3);border-radius:8px;padding:0.8rem 1.2rem;font-size:0.8rem;color:var(--muted);margin-top:0.8rem;}
+.pdf-upload-hint code{color:var(--cyan);background:rgba(0,200,255,0.1);padding:0.1rem 0.4rem;border-radius:3px;}
+.btn-primary{background:var(--blue);color:#fff;padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:background 0.3s,box-shadow 0.3s;display:inline-block;}
+.btn-primary:hover{background:var(--blue-light);box-shadow:0 0 24px rgba(26,111,255,0.4);}
+.btn-outline{border:1px solid var(--border);color:var(--white);padding:0.85rem 2rem;border-radius:4px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:border-color 0.3s,color 0.3s;display:inline-block;}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue-light);}
+
+/* GIGS */
+.gig-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3rem;}
+.gig-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color 0.3s,transform 0.3s;text-decoration:none;color:var(--white);}
+.gig-card:hover{border-color:var(--blue);transform:translateY(-4px);}
+.gig-img{width:100%;height:180px;background:rgba(15,32,64,0.9);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.gig-img img{width:100%;height:100%;object-fit:cover;}
+.gig-img-placeholder{display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--muted);}
+.gig-img-placeholder .big{font-size:2.5rem;}
+.gig-img-placeholder p{font-size:0.78rem;text-align:center;}
+.gig-tag{position:absolute;top:0.8rem;left:0.8rem;background:var(--blue);color:#fff;font-size:0.68rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:0.25rem 0.6rem;border-radius:20px;}
+.gig-body{padding:1.3rem 1.5rem;}
+.gig-service{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--blue-light);margin-bottom:0.4rem;}
+.gig-title{font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;line-height:1.3;}
+.gig-desc{color:var(--muted);font-size:0.82rem;margin-bottom:1rem;}
+.gig-footer{display:flex;align-items:center;justify-content:space-between;}
+.gig-price{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--blue-light);}
+.gig-cta{font-size:0.78rem;color:var(--blue);text-decoration:none;border:1px solid var(--border);padding:0.3rem 0.8rem;border-radius:4px;transition:border-color 0.3s;}
+.gig-cta:hover{border-color:var(--blue);}
+
+/* UPLOAD NOTICE */
+.upload-notice{background:rgba(26,111,255,0.07);border:1px dashed rgba(26,111,255,0.35);border-radius:10px;padding:1.5rem;margin-bottom:2rem;}
+.upload-notice h4{font-family:'Syne',sans-serif;font-size:0.9rem;font-weight:700;color:var(--blue-light);margin-bottom:0.4rem;}
+.upload-notice p{color:var(--muted);font-size:0.82rem;line-height:1.6;}
+.upload-notice code{background:rgba(0,200,255,0.1);color:var(--cyan);padding:0.1rem 0.4rem;border-radius:3px;font-size:0.8rem;}
+
+/* PORTFOLIO SAMPLES */
+.sample-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;}
+.sample-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:border-color 0.3s,transform 0.3s;cursor:pointer;}
+.sample-card:hover{border-color:var(--blue);transform:translateY(-3px);}
+.sample-img{width:100%;height:150px;background:rgba(15,32,64,0.95);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.sample-img img{width:100%;height:100%;object-fit:cover;}
+.sample-body{padding:1rem 1.2rem;}
+.sample-type{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--blue-light);margin-bottom:0.3rem;}
+.sample-name{font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:700;}
+
+/* PLATFORMS */
+.platform-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;}
+.platform-btn{display:flex;align-items:center;gap:0.6rem;background:var(--card);border:1px solid var(--border);padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;color:var(--white);font-size:0.88rem;font-weight:500;transition:border-color 0.3s,color 0.3s;}
+.platform-btn:hover{border-color:var(--blue);color:var(--blue-light);}
+
+/* LIGHTBOX */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:999;align-items:center;justify-content:center;padding:2rem;}
+#lightbox.open{display:flex;}
+#lightbox img{max-width:90vw;max-height:88vh;border-radius:8px;}
+#lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:var(--card);border:1px solid var(--border);color:var(--white);width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+
+footer{text-align:center;padding:2rem 5%;border-top:1px solid var(--border);color:var(--muted);font-size:0.82rem;position:relative;z-index:1;}
+footer a{color:var(--blue-light);text-decoration:none;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(max-width:768px){
+  .nav-links{display:none;flex-direction:column;position:fixed;top:62px;left:0;right:0;background:var(--dark);padding:1.5rem 5%;border-bottom:1px solid var(--border);gap:1.2rem;}
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+  .pdf-banner{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">TMS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="freelancing.html" class="active">Freelancing</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <p class="page-label">Remote Work</p>
+  <h1 class="page-title">Freelancing <span>Portfolio</span></h1>
+  <p class="page-desc">My active Fiverr gigs, work samples, and downloadable portfolio for Excel, Academic Citation & SEO services.</p>
+</div>
+
+<!-- SECTION: PDF PORTFOLIO -->
+<section id="pdf-portfolio">
+  <div class="section-label reveal">Portfolio Document</div>
+  <h2 class="section-title reveal">Download My Portfolio PDF</h2>
+  <div class="section-line reveal"></div>
+
+  <div class="pdf-banner reveal">
+    <div class="pdf-text">
+      <h3>📄 Tahsin Morshed Shakil — Freelance Portfolio</h3>
+      <p>A complete overview of my services, sample work, skills, and pricing — all in one document.</p>
+      <div class="pdf-upload-hint">
+        📌 <strong>To activate:</strong> Upload your PDF as <code>portfolio.pdf</code> to your GitHub repo.
+        The download button will work automatically.
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.8rem;">
+      <a href="portfolio.pdf" download class="btn-primary">⬇️ Download PDF</a>
+      <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="btn-outline">🟢 View Fiverr Profile</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: ACTIVE GIGS -->
+<section id="gigs" style="background:rgba(10,22,40,0.4);">
+  <div class="section-label reveal">Fiverr Services</div>
+  <h2 class="section-title reveal">My Active Gigs</h2>
+  <div class="section-line reveal"></div>
+
+  <div class="upload-notice reveal">
+    <h4>📌 How to Add Your Gig Images</h4>
+    <p>Go to Fiverr → your gig → right-click the gig thumbnail → Save Image As <code>gig-excel.jpg</code>, <code>gig-citation.jpg</code>, <code>gig-seo.jpg</code> → Upload to GitHub. They'll appear automatically below.</p>
+  </div>
+
+  <div class="gig-grid">
+    <!-- GIG 1: Excel -->
+    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="gig-card reveal">
+      <div class="gig-img">
+        <img src="gig-excel.jpg" alt="Excel Gig" onerror="this.parentElement.innerHTML='<div class=gig-img-placeholder><div class=big>📊</div><p>Upload gig-excel.jpg</p></div>'">
+        <span class="gig-tag">Active</span>
+      </div>
+      <div class="gig-body">
+        <div class="gig-service">Microsoft Excel</div>
+        <div class="gig-title">I will do Excel data entry, cleaning, formulas and dashboard</div>
+        <div class="gig-desc">Professional Excel solutions — pivot tables, formulas, charts, automation, and data formatting.</div>
+        <div class="gig-footer">
+          <span class="gig-price">Starting $5</span>
+          <span class="gig-cta">View Gig →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- GIG 2: Citation -->
+    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="gig-card reveal">
+      <div class="gig-img">
+        <img src="gig-citation.jpg" alt="Citation Gig" onerror="this.parentElement.innerHTML='<div class=gig-img-placeholder><div class=big>📚</div><p>Upload gig-citation.jpg</p></div>'">
+        <span class="gig-tag">Active</span>
+      </div>
+      <div class="gig-body">
+        <div class="gig-service">Academic Citation</div>
+        <div class="gig-title">I will format references and citations in APA, MLA, Chicago, IEEE</div>
+        <div class="gig-desc">Accurate citation formatting, bibliography creation, and reference list auditing for any academic document.</div>
+        <div class="gig-footer">
+          <span class="gig-price">Starting $5</span>
+          <span class="gig-cta">View Gig →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- GIG 3: SEO -->
+    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="gig-card reveal">
+      <div class="gig-img">
+        <img src="gig-seo.jpg" alt="SEO Gig" onerror="this.parentElement.innerHTML='<div class=gig-img-placeholder><div class=big>🔍</div><p>Upload gig-seo.jpg</p></div>'">
+        <span class="gig-tag">Active</span>
+      </div>
+      <div class="gig-body">
+        <div class="gig-service">SEO Optimization</div>
+        <div class="gig-title">I will do on-page SEO optimization and keyword research</div>
+        <div class="gig-desc">Keyword research, meta tag optimization, content structuring and on-page SEO to boost Google rankings.</div>
+        <div class="gig-footer">
+          <span class="gig-price">Starting $10</span>
+          <span class="gig-cta">View Gig →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="platform-row reveal">
+    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="platform-btn">🟢 All Gigs on Fiverr</a>
+    <a href="index.html#contact" class="platform-btn">✉️ Contact Directly</a>
+  </div>
+</section>
+
+<!-- SECTION: WORK SAMPLES -->
+<section id="samples">
+  <div class="section-label reveal">Work Portfolio</div>
+  <h2 class="section-title reveal">Work Samples</h2>
+  <div class="section-line reveal"></div>
+
+  <div class="upload-notice reveal">
+    <h4>📌 How to Add Work Sample Images</h4>
+    <p>Screenshot your best work (Excel sheets, citation docs, SEO reports). Save as <code>sample-excel-1.jpg</code>, <code>sample-citation-1.jpg</code>, <code>sample-seo-1.jpg</code> and upload to GitHub.</p>
+  </div>
+
+  <div class="sample-grid reveal">
+    <div class="sample-card" onclick="openLightbox('sample-excel-1.jpg')">
+      <div class="sample-img">
+        <img src="sample-excel-1.jpg" alt="Excel Sample" onerror="this.parentElement.innerHTML='<div style=display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:2rem;>📊</div>'">
+      </div>
+      <div class="sample-body"><div class="sample-type">Excel</div><div class="sample-name">Data Dashboard Sample</div></div>
+    </div>
+    <div class="sample-card" onclick="openLightbox('sample-citation-1.jpg')">
+      <div class="sample-img">
+        <img src="sample-citation-1.jpg" alt="Citation Sample" onerror="this.parentElement.innerHTML='<div style=display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:2rem;>📚</div>'">
+      </div>
+      <div class="sample-body"><div class="sample-type">Citation</div><div class="sample-name">APA Reference List Sample</div></div>
+    </div>
+    <div class="sample-card" onclick="openLightbox('sample-seo-1.jpg')">
+      <div class="sample-img">
+        <img src="sample-seo-1.jpg" alt="SEO Sample" onerror="this.parentElement.innerHTML='<div style=display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:2rem;>🔍</div>'">
+      </div>
+      <div class="sample-body"><div class="sample-type">SEO</div><div class="sample-name">Keyword Research Report</div></div>
+    </div>
+    <div class="sample-card" onclick="openLightbox('sample-excel-2.jpg')">
+      <div class="sample-img">
+        <img src="sample-excel-2.jpg" alt="Excel Sample 2" onerror="this.parentElement.innerHTML='<div style=display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:2rem;>📈</div>'">
+      </div>
+      <div class="sample-body"><div class="sample-type">Excel</div><div class="sample-name">Financial Report Template</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="Sample Preview">
+</div>
+
+<footer>
+  <p>© 2025 <a href="index.html">Tahsin Morshed Shakil</a> · Chattogram, Bangladesh</p>
+  <p style="margin-top:0.4rem;font-size:0.75rem;">Excel · Citation · SEO · Available on Fiverr & Upwork</p>
+</footer>
+
+<script>
+function toggleNav(){ document.getElementById('navLinks').classList.toggle('open'); }
+function openLightbox(src){ document.getElementById('lightbox-img').src=src; document.getElementById('lightbox').classList.add('open'); }
+function closeLightbox(){ document.getElementById('lightbox').classList.remove('open'); }
+const observer = new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(r=>observer.observe(r));
+</script>
+</body>
+</html>

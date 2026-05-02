@@ -9,88 +9,11 @@
 <meta property="og:title" content="Tahsin Morshed Shakil | CSE Student & Freelancer">
 <meta property="og:description" content="Portfolio of Tahsin Morshed Shakil — CSE Student, Freelancer & Tutor from Chattogram, Bangladesh.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://tmshakil.github.io/">
 <title>Tahsin Morshed Shakil | CSE Student & Freelancer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <style>
-  :root {
-    --navy: #050d1a;
-    --dark: #0a1628;
-    --mid: #0f2040;
-    --blue: #1a6fff;
-    --blue-light: #4d8fff;
-    --blue-glow: rgba(26,111,255,0.18);
-    --cyan: #00c8ff;
-    --white: #f0f5ff;
-    --muted: #7a8fb0;
-    --border: rgba(26,111,255,0.15);
-    --card: rgba(15,32,64,0.7);
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--navy);
-    color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    overflow-x: hidden;
-  }
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(26,111,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(26,111,255,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-    z-index: 0;
-  }
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2rem 5%;
-    background: rgba(5,13,26,0.88);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-  }
-  .nav-logo {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 1.3rem;
-    color: var(--blue);
-    letter-spacing: 2px;
-    text-decoration: none;
-  }
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  .nav-links a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover { color: var(--blue-light); }
-  .nav-cta {
-    background: var(--blue) !important;
-    color: #fff !important;
-    padding: 0.45rem 1.1rem !important;
-    border-radius: 4px;
-  }
-  .nav-cta:hover { background: var(--blue-light) !important; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-  .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
+  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex;
@@ -99,155 +22,48 @@
     position: relative;
     overflow: hidden;
   }
-  .hero-glow {
-    position: absolute;
-    width: 700px; height: 700px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(26,111,255,0.1) 0%, transparent 70%);
-    top: 50%; left: 55%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
-  .hero-content { position: relative; z-index: 1; max-width: 780px; }
-  .hero-tag {
-    display: inline-block;
-    background: var(--blue-glow);
-    border: 1px solid var(--border);
-    color: var(--blue-light);
-    font-size: 0.78rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0.4rem 1rem;
-    border-radius: 2px;
-    margin-bottom: 1.5rem;
-    animation: fadeUp 0.7s ease both;
-  }
-  h1.hero-name {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2.8rem, 6vw, 5rem);
-    font-weight: 800;
-    line-height: 1.05;
-    margin-bottom: 1.2rem;
-    animation: fadeUp 0.8s ease 0.1s both;
-  }
+  .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: center; width: 100%; position: relative; z-index: 1; max-width: 1100px; }
+  .hero-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(26,111,255,0.1) 0%, transparent 70%); top: 50%; left: 40%; transform: translate(-50%, -50%); pointer-events: none; }
+  .hero-tag { display: inline-block; background: var(--blue-glow); border: 1px solid var(--border); color: var(--blue-light); font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 2px; margin-bottom: 1.5rem; animation: fadeUp 0.7s ease both; }
+  h1.hero-name { font-family: 'Syne', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 800; line-height: 1.05; margin-bottom: 1.2rem; animation: fadeUp 0.8s ease 0.1s both; }
   h1.hero-name span { color: var(--blue); }
-  .hero-desc {
-    font-size: 1.05rem;
-    color: var(--muted);
-    max-width: 560px;
-    margin-bottom: 2.5rem;
-    animation: fadeUp 0.8s ease 0.2s both;
-  }
-  .hero-btns {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    animation: fadeUp 0.8s ease 0.3s both;
-  }
-  .btn-primary {
-    background: var(--blue);
-    color: #fff;
-    padding: 0.85rem 2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: background 0.3s, box-shadow 0.3s;
-    display: inline-block;
-  }
-  .btn-primary:hover { background: var(--blue-light); box-shadow: 0 0 24px rgba(26,111,255,0.4); }
-  .btn-outline {
-    border: 1px solid var(--border);
-    color: var(--white);
-    padding: 0.85rem 2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: border-color 0.3s, color 0.3s;
-  }
-  .btn-outline:hover { border-color: var(--blue); color: var(--blue-light); }
-  .hero-stats {
-    display: flex;
-    gap: 3rem;
-    margin-top: 3.5rem;
-    animation: fadeUp 0.8s ease 0.4s both;
-    flex-wrap: wrap;
-  }
-  .stat-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--blue);
-    line-height: 1;
-  }
+  .hero-desc { font-size: 1.05rem; color: var(--muted); max-width: 520px; margin-bottom: 2.5rem; animation: fadeUp 0.8s ease 0.2s both; }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.8s ease 0.3s both; }
+  .hero-stats { display: flex; gap: 3rem; margin-top: 3.5rem; animation: fadeUp 0.8s ease 0.4s both; flex-wrap: wrap; }
+  .stat-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--blue); line-height: 1; }
   .stat-label { font-size: 0.78rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-top: 0.3rem; }
-  section {
-    padding: 6rem 5%;
-    position: relative;
-    z-index: 1;
+
+  /* Photo */
+  .hero-photo-wrap { animation: fadeUp 0.8s ease 0.2s both; flex-shrink: 0; }
+  .hero-photo-ring {
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--blue), var(--cyan), var(--blue));
+    box-shadow: 0 0 40px rgba(26,111,255,0.3);
   }
-  .section-label { font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: var(--blue); margin-bottom: 0.6rem; }
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 800;
-    margin-bottom: 1rem;
-    line-height: 1.15;
-  }
-  .section-line { width: 48px; height: 3px; background: var(--blue); margin-bottom: 3rem; border-radius: 2px; }
-  #about .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
+  .hero-photo-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center top; display: block; }
+
+  /* ABOUT */
+  #about .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
   .about-text p { color: var(--muted); margin-bottom: 1.2rem; }
   .about-text p strong { color: var(--white); }
-  .about-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  .detail-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1rem 1.2rem;
-  }
+  .about-details { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+  .detail-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.2rem; }
   .detail-label { font-size: 0.72rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue-light); margin-bottom: 0.3rem; }
   .detail-value { font-size: 0.9rem; color: var(--white); font-weight: 500; }
-  .family-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 2rem;
-  }
+  .family-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; }
   .family-card h3 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--blue-light); }
   .family-member { display: flex; align-items: center; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
   .family-member:last-child { border-bottom: none; }
   .member-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--blue-glow); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
   .member-name { font-weight: 500; font-size: 0.9rem; }
   .member-role { font-size: 0.78rem; color: var(--muted); }
+
+  /* EDUCATION */
   #education { background: rgba(10,22,40,0.4); }
-  .edu-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 2rem 2.5rem;
-    max-width: 700px;
-    position: relative;
-    overflow: hidden;
-  }
-  .edu-card::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: linear-gradient(180deg, var(--blue), var(--cyan));
-    border-radius: 4px 0 0 4px;
-  }
+  .edu-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem 2.5rem; max-width: 700px; position: relative; overflow: hidden; }
+  .edu-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, var(--blue), var(--cyan)); border-radius: 4px 0 0 4px; }
   .edu-uni { font-family: 'Syne', sans-serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem; }
   .edu-dept { color: var(--blue-light); font-size: 0.9rem; margin-bottom: 0.5rem; }
   .edu-meta { color: var(--muted); font-size: 0.85rem; }
@@ -255,33 +71,21 @@
   .skills-grid { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 2.5rem; }
   .skill-tag { background: var(--card); border: 1px solid var(--border); color: var(--white); font-size: 0.82rem; padding: 0.4rem 1rem; border-radius: 20px; transition: border-color 0.3s, color 0.3s; }
   .skill-tag:hover { border-color: var(--blue); color: var(--blue-light); }
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 2rem;
-    transition: border-color 0.3s, transform 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-  .service-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 0%, var(--blue-glow), transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-  }
+
+  /* FREELANCING */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+  .service-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: border-color 0.3s, transform 0.3s; position: relative; overflow: hidden; }
+  .service-card::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, var(--blue-glow), transparent 70%); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
   .service-card:hover { border-color: var(--blue); transform: translateY(-4px); }
   .service-card:hover::after { opacity: 1; }
   .service-icon { font-size: 2rem; margin-bottom: 1rem; position: relative; z-index: 1; }
   .service-title { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.7rem; position: relative; z-index: 1; }
   .service-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.6; position: relative; z-index: 1; }
-  .platform-badges { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
-  .platform-badge { display: flex; align-items: center; gap: 0.6rem; background: var(--card); border: 1px solid var(--border); padding: 0.7rem 1.4rem; border-radius: 8px; text-decoration: none; color: var(--white); font-size: 0.88rem; font-weight: 500; transition: border-color 0.3s, color 0.3s; }
-  .platform-badge:hover { border-color: var(--blue); color: var(--blue-light); }
+  .freelance-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+  .freelance-link { display: flex; align-items: center; gap: 0.6rem; background: var(--card); border: 1px solid var(--border); padding: 0.7rem 1.4rem; border-radius: 8px; text-decoration: none; color: var(--white); font-size: 0.88rem; font-weight: 500; transition: border-color 0.3s, color 0.3s; }
+  .freelance-link:hover { border-color: var(--blue); color: var(--blue-light); }
+
+  /* TUTORING */
   #tutoring { background: rgba(10,22,40,0.4); }
   .tutoring-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
   .tutor-highlight { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
@@ -293,20 +97,26 @@
   .subject-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
   .subject-name { font-size: 0.9rem; font-weight: 500; }
   .subject-level { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+
+  /* TRAVEL */
   .travel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
   .travel-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: border-color 0.3s, transform 0.3s; }
   .travel-card:hover { border-color: var(--blue); transform: translateY(-4px); }
   .travel-icon { font-size: 2.5rem; margin-bottom: 1rem; }
   .travel-city { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.4rem; }
   .travel-desc { color: var(--muted); font-size: 0.85rem; }
+
+  /* FUTURE */
   #future { background: rgba(10,22,40,0.4); }
   .timeline { max-width: 640px; position: relative; }
   .timeline::before { content: ''; position: absolute; left: 16px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--blue), transparent); }
-  .timeline-item { display: flex; gap: 1.8rem; margin-bottom: 2.5rem; position: relative; }
+  .timeline-item { display: flex; gap: 1.8rem; margin-bottom: 2.5rem; }
   .timeline-dot { width: 34px; height: 34px; border-radius: 50%; background: var(--dark); border: 2px solid var(--blue); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; position: relative; z-index: 1; }
   .timeline-phase { font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: var(--blue-light); margin-bottom: 0.3rem; }
   .timeline-title { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
   .timeline-desc { color: var(--muted); font-size: 0.87rem; }
+
+  /* CONTACT */
   #contact { text-align: center; }
   #contact .section-line { margin: 0 auto 3rem; }
   .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto 2rem; text-align: left; }
@@ -315,15 +125,27 @@
   .contact-icon { font-size: 1.4rem; flex-shrink: 0; }
   .contact-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.2rem; }
   .contact-value { font-weight: 500; font-size: 0.85rem; word-break: break-all; }
-  footer { text-align: center; padding: 2rem 5%; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; position: relative; z-index: 1; }
-  footer a { color: var(--blue-light); text-decoration: none; }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* MORE PAGES BANNER */
+  .pages-banner {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .pages-banner p { color: var(--muted); font-size: 0.9rem; flex: 1; min-width: 200px; }
+  .page-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(26,111,255,0.12); border: 1px solid var(--border); color: var(--white); padding: 0.5rem 1.1rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: border-color 0.3s, color 0.3s; }
+  .page-pill:hover { border-color: var(--blue); color: var(--blue-light); }
+
   @media (max-width: 768px) {
-    .nav-links { display: none; flex-direction: column; position: fixed; top: 62px; left: 0; right: 0; background: var(--dark); padding: 1.5rem 5%; border-bottom: 1px solid var(--border); gap: 1.2rem; }
-    .nav-links.open { display: flex; }
-    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-photo-wrap { display: flex; justify-content: center; order: -1; }
+    .hero-photo-ring { width: 180px; height: 180px; }
     #about .about-grid, .tutoring-grid { grid-template-columns: 1fr; gap: 2rem; }
     .about-details { grid-template-columns: 1fr; }
     .hero-stats { gap: 2rem; }
@@ -333,14 +155,13 @@
 <body>
 
 <nav>
-  <a href="#hero" class="nav-logo">TMS</a>
+  <a href="index.html" class="nav-logo">TMS</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
-    <li><a href="#freelancing">Freelancing</a></li>
+    <li><a href="freelancing.html">Freelancing</a></li>
     <li><a href="#tutoring">Tutoring</a></li>
-    <li><a href="#travel">Travel</a></li>
-    <li><a href="#future">Plans</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleNav()">
@@ -348,33 +169,33 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hero-glow"></div>
-  <div class="hero-content">
-    <div class="hero-tag">📍 Lohagara, Chattogram, Bangladesh</div>
-    <h1 class="hero-name">Tahsin Morshed<br><span>Shakil</span></h1>
-    <p class="hero-desc">CSE Student · Freelancer in Excel, Citation & SEO · Science Tutor · Aspiring Software Engineer</p>
-    <div class="hero-btns">
-      <a href="#freelancing" class="btn-primary">Hire Me</a>
-      <a href="#contact" class="btn-outline">Get In Touch</a>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">📍 Lohagara, Chattogram, Bangladesh</div>
+      <h1 class="hero-name">Tahsin Morshed<br><span>Shakil</span></h1>
+      <p class="hero-desc">CSE Student · Freelancer in Excel, Citation &amp; SEO · Science Tutor · Aspiring Software Engineer</p>
+      <div class="hero-btns">
+        <a href="#freelancing" class="btn-primary">Hire Me</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">4+</div><div class="stat-label">Years Tutoring</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">Freelance Skills</div></div>
+        <div><div class="stat-num">CSE</div><div class="stat-label">BGC Trust Univ.</div></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num">4+</div>
-        <div class="stat-label">Years Tutoring</div>
-      </div>
-      <div>
-        <div class="stat-num">3</div>
-        <div class="stat-label">Freelance Skills</div>
-      </div>
-      <div>
-        <div class="stat-num">CSE</div>
-        <div class="stat-label">BGC Trust Univ.</div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring">
+        <img src="MY_Professional_Pic.jpeg" alt="Tahsin Morshed Shakil — CSE Student and Freelancer from Chattogram Bangladesh">
       </div>
     </div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="reveal">
     <p class="section-label">Who I Am</p>
@@ -384,7 +205,7 @@
   <div class="about-grid">
     <div class="about-text reveal">
       <p>Hello! I'm <strong>Tahsin Morshed Shakil</strong>, a Computer Science &amp; Engineering student at <strong>BGC Trust University Bangladesh</strong>, currently in my 3rd semester. I'm originally from <strong>Lohagara, Chattogram</strong> — a region that instilled in me the values of hard work and perseverance.</p>
-      <p>To support my university fees and personal expenses, I actively work as a <strong>private science tutor</strong> for Class 9–12 students and offer freelancing services in <strong>Microsoft Excel, Academic Citation, and SEO</strong> on platforms like Fiverr and Upwork.</p>
+      <p>To support my university fees and personal expenses, I actively work as a <strong>private science tutor</strong> for Class 9–12 students and offer freelancing services in <strong>Microsoft Excel, Academic Citation, and SEO</strong> on Fiverr and Upwork.</p>
       <p>I am self-driven, goal-oriented, and passionate about technology. My long-term aspiration is to build a career as a <strong>professional Software Engineer</strong>, creating meaningful digital products that make a real-world impact.</p>
       <div class="about-details">
         <div class="detail-item"><div class="detail-label">Location</div><div class="detail-value">Lohagara, Chattogram</div></div>
@@ -395,26 +216,15 @@
     </div>
     <div class="family-card reveal">
       <h3>👨‍👩‍👦 My Family</h3>
-      <div class="family-member">
-        <div class="member-avatar">👨</div>
-        <div><div class="member-name">Badsha Mia</div><div class="member-role">Father</div></div>
-      </div>
-      <div class="family-member">
-        <div class="member-avatar">👩</div>
-        <div><div class="member-name">Morsheda Akter</div><div class="member-role">Mother</div></div>
-      </div>
-      <div class="family-member">
-        <div class="member-avatar">👦</div>
-        <div><div class="member-name">Mohsin Badsha Akil</div><div class="member-role">Brother · Born 2007</div></div>
-      </div>
-      <div class="family-member">
-        <div class="member-avatar">👶</div>
-        <div><div class="member-name">Jawad Ibne Badsha</div><div class="member-role">Brother · Born 2014</div></div>
-      </div>
+      <div class="family-member"><div class="member-avatar">👨</div><div><div class="member-name">Badsha Mia</div><div class="member-role">Father</div></div></div>
+      <div class="family-member"><div class="member-avatar">👩</div><div><div class="member-name">Morsheda Akter</div><div class="member-role">Mother</div></div></div>
+      <div class="family-member"><div class="member-avatar">👦</div><div><div class="member-name">Mohsin Badsha Akil</div><div class="member-role">Brother · Born 2007</div></div></div>
+      <div class="family-member"><div class="member-avatar">👶</div><div><div class="member-name">Jawad Ibne Badsha</div><div class="member-role">Brother · Born 2014</div></div></div>
     </div>
   </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
   <div class="reveal">
     <p class="section-label">Academic Background</p>
@@ -427,25 +237,15 @@
     <div class="edu-meta">3rd Semester &nbsp;·&nbsp; Chittagong, Bangladesh</div>
     <div class="edu-badge">🎓 Currently Enrolled</div>
   </div>
-  <div style="margin-top: 3rem;" class="reveal">
-    <p style="color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem; letter-spacing: 1px; text-transform: uppercase;">Technical Skills &amp; Areas of Study</p>
+  <div style="margin-top:3rem;" class="reveal">
+    <p style="color:var(--muted);font-size:0.82rem;margin-bottom:1rem;letter-spacing:1px;text-transform:uppercase;">Technical Skills &amp; Areas of Study</p>
     <div class="skills-grid">
-      <span class="skill-tag">C / C++</span>
-      <span class="skill-tag">Data Structures</span>
-      <span class="skill-tag">Algorithms</span>
-      <span class="skill-tag">OOP</span>
-      <span class="skill-tag">Database Systems</span>
-      <span class="skill-tag">Web Development</span>
-      <span class="skill-tag">Operating Systems</span>
-      <span class="skill-tag">Discrete Mathematics</span>
-      <span class="skill-tag">Microsoft Excel</span>
-      <span class="skill-tag">Academic Citation</span>
-      <span class="skill-tag">SEO</span>
-      <span class="skill-tag">Computer Networks</span>
+      <span class="skill-tag">C / C++</span><span class="skill-tag">Data Structures</span><span class="skill-tag">Algorithms</span><span class="skill-tag">OOP</span><span class="skill-tag">Database Systems</span><span class="skill-tag">Web Development</span><span class="skill-tag">Operating Systems</span><span class="skill-tag">Discrete Mathematics</span><span class="skill-tag">Microsoft Excel</span><span class="skill-tag">Academic Citation</span><span class="skill-tag">SEO</span><span class="skill-tag">Computer Networks</span>
     </div>
   </div>
 </section>
 
+<!-- FREELANCING -->
 <section id="freelancing">
   <div class="reveal">
     <p class="section-label">Remote Work</p>
@@ -456,28 +256,32 @@
     <div class="service-card reveal">
       <div class="service-icon">📊</div>
       <div class="service-title">Microsoft Excel &amp; Data</div>
-      <div class="service-desc">Data cleaning, advanced formulas, pivot tables, dashboards, spreadsheet automation, and financial modeling. I deliver clean, accurate, and visually organized Excel solutions for individuals and businesses.</div>
+      <div class="service-desc">Data cleaning, advanced formulas, pivot tables, dashboards, spreadsheet automation, and financial modeling. Clean, accurate, and visually organized Excel solutions.</div>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">📚</div>
       <div class="service-title">Academic Citation</div>
-      <div class="service-desc">Accurate citation and referencing in APA, MLA, Chicago, and IEEE formats. Bibliography management, citation auditing, and research paper formatting for students, researchers, and academics worldwide.</div>
+      <div class="service-desc">Accurate referencing in APA, MLA, Chicago, and IEEE formats. Bibliography management, citation auditing, and research paper formatting for students and academics worldwide.</div>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">🔍</div>
       <div class="service-title">Search Engine Optimization</div>
-      <div class="service-desc">Keyword research, on-page SEO, meta tag optimization, content structuring, and competitor analysis. Helping websites improve their visibility and organic ranking on Google and other major search engines.</div>
+      <div class="service-desc">Keyword research, on-page SEO, meta tag optimization, content structuring, and competitor analysis. Helping websites rank higher on Google and other search engines.</div>
     </div>
   </div>
   <div class="reveal">
-    <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 1.2rem;">Find me on freelancing platforms:</p>
-    <div class="platform-badges">
-      <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="platform-badge">🟢 Fiverr &nbsp;—&nbsp; @tmshakil</a>
-      <a href="#contact" class="platform-badge">🔵 Upwork &nbsp;—&nbsp; Coming Soon</a>
+    <div class="pages-banner">
+      <p>View my full freelancing portfolio, active Fiverr gigs, and downloadable portfolio PDF.</p>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <a href="freelancing.html" class="page-pill">📁 View Full Portfolio</a>
+        <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="page-pill">🟢 Fiverr Profile</a>
+        <a href="#contact" class="page-pill">🔵 Upwork — Coming Soon</a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- TUTORING -->
 <section id="tutoring">
   <div class="reveal">
     <p class="section-label">Teaching</p>
@@ -490,52 +294,26 @@
         <div class="highlight-box"><div class="highlight-num">4+</div><div class="highlight-text">Years Experience</div></div>
         <div class="highlight-box"><div class="highlight-num">9–12</div><div class="highlight-text">Class Level</div></div>
         <div class="highlight-box"><div class="highlight-num">SSC</div><div class="highlight-text">&amp; HSC Focus</div></div>
-        <div class="highlight-box"><div class="highlight-num">Science</div><div class="highlight-text">Stream Specialist</div></div>
+        <div class="highlight-box"><div class="highlight-num">Science</div><div class="highlight-text">Stream</div></div>
       </div>
-      <div class="reveal" style="color: var(--muted); font-size: 0.9rem; line-height: 1.8;">
-        <p>With over 4 years of teaching experience, I specialize in helping <strong style="color:var(--white)">Science stream students</strong> from Class 9 to 12 prepare effectively for SSC and HSC examinations.</p>
-        <p style="margin-top: 1rem;">My teaching method focuses on <strong style="color:var(--white)">conceptual understanding</strong> combined with exam-oriented practice. I offer both in-person sessions in Chattogram and online sessions via WhatsApp or video call.</p>
-        <p style="margin-top: 1rem;">I believe every student can succeed with the right guidance and a personalized approach.</p>
-        <div style="margin-top: 1.8rem;">
-          <a href="https://wa.me/8801301664278" target="_blank" rel="noopener" class="btn-primary">📩 Book a Session on WhatsApp</a>
-        </div>
+      <div class="reveal" style="color:var(--muted);font-size:0.9rem;line-height:1.8;">
+        <p>With over 4 years of teaching experience, I help <strong style="color:var(--white)">Science stream students</strong> from Class 9–12 prepare for SSC and HSC examinations with conceptual clarity and exam-focused strategies.</p>
+        <p style="margin-top:1rem;">I offer both <strong style="color:var(--white)">in-person and online sessions</strong>, flexible scheduling, and personalized study plans.</p>
+        <div style="margin-top:1.8rem;"><a href="https://wa.me/8801301664278" target="_blank" rel="noopener" class="btn-primary">📩 Book a Session</a></div>
       </div>
     </div>
     <div class="subject-list reveal">
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">Physics</div>
-        <div class="subject-level">Class 9–12</div>
-      </div>
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">Chemistry</div>
-        <div class="subject-level">Class 9–12</div>
-      </div>
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">Higher Mathematics</div>
-        <div class="subject-level">Class 9–12</div>
-      </div>
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">Biology</div>
-        <div class="subject-level">Class 9–10</div>
-      </div>
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">ICT / Computer Studies</div>
-        <div class="subject-level">Class 9–12</div>
-      </div>
-      <div class="subject-item">
-        <div class="subject-dot"></div>
-        <div class="subject-name">General Mathematics</div>
-        <div class="subject-level">Class 9–10</div>
-      </div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">Physics</div><div class="subject-level">Class 9–12</div></div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">Chemistry</div><div class="subject-level">Class 9–12</div></div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">Higher Mathematics</div><div class="subject-level">Class 9–12</div></div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">Biology</div><div class="subject-level">Class 9–10</div></div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">ICT / Computer Studies</div><div class="subject-level">Class 9–12</div></div>
+      <div class="subject-item"><div class="subject-dot"></div><div class="subject-name">General Mathematics</div><div class="subject-level">Class 9–10</div></div>
     </div>
   </div>
 </section>
 
+<!-- TRAVEL -->
 <section id="travel">
   <div class="reveal">
     <p class="section-label">Places I've Been</p>
@@ -543,120 +321,58 @@
     <div class="section-line"></div>
   </div>
   <div class="travel-grid">
-    <div class="travel-card reveal">
-      <div class="travel-icon">🏙️</div>
-      <div class="travel-city">Chattogram (Chittagong)</div>
-      <div class="travel-desc">My home — Bangladesh's port city and commercial hub. A vibrant mix of hills, sea, history, and culture that continues to inspire me every day.</div>
-    </div>
-    <div class="travel-card reveal">
-      <div class="travel-icon">🍃</div>
-      <div class="travel-city">Sylhet</div>
-      <div class="travel-desc">The land of tea gardens and haors. Explored the stunning natural landscapes, serene wetlands, and the refreshing green hills of northeastern Bangladesh.</div>
-    </div>
+    <div class="travel-card reveal"><div class="travel-icon">🏙️</div><div class="travel-city">Chattogram (Chittagong)</div><div class="travel-desc">My home — Bangladesh's port city and commercial hub. A vibrant mix of hills, sea, history, and culture.</div></div>
+    <div class="travel-card reveal"><div class="travel-icon">🍃</div><div class="travel-city">Sylhet</div><div class="travel-desc">The land of tea gardens and haors. Explored stunning natural landscapes and the serene wetlands of northeastern Bangladesh.</div></div>
   </div>
 </section>
 
-<section id="future">
+<!-- FUTURE PLANS -->
+<section id="future" style="background:rgba(10,22,40,0.4)">
   <div class="reveal">
     <p class="section-label">My Vision</p>
     <h2 class="section-title">Future Plans</h2>
     <div class="section-line"></div>
   </div>
   <div class="timeline reveal">
-    <div class="timeline-item">
-      <div class="timeline-dot">🎓</div>
-      <div class="timeline-content">
-        <div class="timeline-phase">Short Term · Now – 2027</div>
-        <div class="timeline-title">Complete CSE Degree</div>
-        <div class="timeline-desc">Graduate from BGC Trust University Bangladesh with a strong academic record, while building real-world projects, a growing GitHub portfolio, and practical software development skills.</div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot">💻</div>
-      <div class="timeline-content">
-        <div class="timeline-phase">Mid Term · 2025–2027</div>
-        <div class="timeline-title">Scale Freelancing &amp; Earn Independently</div>
-        <div class="timeline-desc">Grow Excel, SEO, and Citation services on Fiverr and Upwork. Expand into software development freelance projects as programming skills deepen. Achieve full financial independence.</div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot">🚀</div>
-      <div class="timeline-content">
-        <div class="timeline-phase">Long Term · 2027+</div>
-        <div class="timeline-title">Become a Professional Software Engineer</div>
-        <div class="timeline-desc">Land a full-time Software Engineering role in a reputable tech company — contributing to meaningful products, solving real-world problems, and growing as a developer in the global tech industry.</div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot">🌍</div>
-      <div class="timeline-content">
-        <div class="timeline-phase">Ultimate Goal</div>
-        <div class="timeline-title">Make a Lasting Impact</div>
-        <div class="timeline-desc">Build products that genuinely help people, represent Bangladesh in the global tech community, and be a source of inspiration for aspiring engineers from Chattogram and beyond.</div>
-      </div>
-    </div>
+    <div class="timeline-item"><div class="timeline-dot">🎓</div><div><div class="timeline-phase">Short Term · Now – 2027</div><div class="timeline-title">Complete CSE Degree</div><div class="timeline-desc">Graduate from BGC Trust University Bangladesh with a strong academic record, building real-world projects and a growing GitHub portfolio.</div></div></div>
+    <div class="timeline-item"><div class="timeline-dot">💻</div><div><div class="timeline-phase">Mid Term · 2025–2027</div><div class="timeline-title">Scale Freelancing &amp; Earn Independently</div><div class="timeline-desc">Grow Excel, SEO, and Citation services on Fiverr and Upwork. Expand into web development freelance projects and achieve full financial independence.</div></div></div>
+    <div class="timeline-item"><div class="timeline-dot">🚀</div><div><div class="timeline-phase">Long Term · 2027+</div><div class="timeline-title">Become a Professional Software Engineer</div><div class="timeline-desc">Land a full-time Software Engineering role — contributing to meaningful products and growing as a developer in the global tech industry.</div></div></div>
+    <div class="timeline-item"><div class="timeline-dot">🌍</div><div><div class="timeline-phase">Ultimate Goal</div><div class="timeline-title">Make a Lasting Impact</div><div class="timeline-desc">Build products that help people, represent Bangladesh in the global tech community, and inspire the next generation of engineers from Chattogram.</div></div></div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="reveal">
     <p class="section-label">Reach Out</p>
     <h2 class="section-title">Contact &amp; Social Media</h2>
     <div class="section-line"></div>
-    <p style="color: var(--muted); max-width: 500px; margin: 0 auto 3rem; font-size: 0.9rem;">Open to freelancing projects, tutoring inquiries, collaboration, and networking. Feel free to reach out through any channel below.</p>
+    <p style="color:var(--muted);max-width:500px;margin:0 auto 3rem;font-size:0.9rem;">Open to freelancing, tutoring inquiries, collaboration, and networking.</p>
   </div>
   <div class="contact-grid reveal">
-    <a href="mailto:tmshakil189@gmail.com" class="contact-item">
-      <div class="contact-icon">📧</div>
-      <div><div class="contact-label">Email</div><div class="contact-value">tmshakil189@gmail.com</div></div>
-    </a>
-    <a href="https://wa.me/8801301664278" target="_blank" rel="noopener" class="contact-item">
-      <div class="contact-icon">💬</div>
-      <div><div class="contact-label">WhatsApp</div><div class="contact-value">+880 1301-664278</div></div>
-    </a>
-    <a href="https://linkedin.com/in/TMSHAKIL" target="_blank" rel="noopener" class="contact-item">
-      <div class="contact-icon">💼</div>
-      <div><div class="contact-label">LinkedIn</div><div class="contact-value">linkedin.com/in/TMSHAKIL</div></div>
-    </a>
-    <a href="https://github.com/TMSHAKIL" target="_blank" rel="noopener" class="contact-item">
-      <div class="contact-icon">🐙</div>
-      <div><div class="contact-label">GitHub</div><div class="contact-value">github.com/TMSHAKIL</div></div>
-    </a>
-    <a href="https://www.facebook.com/tmshakil.291" target="_blank" rel="noopener" class="contact-item">
-      <div class="contact-icon">📘</div>
-      <div><div class="contact-label">Facebook</div><div class="contact-value">fb.com/tmshakil.291</div></div>
-    </a>
-    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="contact-item">
-      <div class="contact-icon">🟢</div>
-      <div><div class="contact-label">Fiverr</div><div class="contact-value">fiverr.com/tmshakil</div></div>
-    </a>
+    <a href="mailto:tmshakil189@gmail.com" class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value">tmshakil189@gmail.com</div></div></a>
+    <a href="https://wa.me/8801301664278" target="_blank" rel="noopener" class="contact-item"><div class="contact-icon">💬</div><div><div class="contact-label">WhatsApp</div><div class="contact-value">+880 1301-664278</div></div></a>
+    <a href="https://linkedin.com/in/TMSHAKIL" target="_blank" rel="noopener" class="contact-item"><div class="contact-icon">💼</div><div><div class="contact-label">LinkedIn</div><div class="contact-value">linkedin.com/in/TMSHAKIL</div></div></a>
+    <a href="https://github.com/TMSHAKIL" target="_blank" rel="noopener" class="contact-item"><div class="contact-icon">🐙</div><div><div class="contact-label">GitHub</div><div class="contact-value">github.com/TMSHAKIL</div></div></a>
+    <a href="https://www.facebook.com/tmshakil.291" target="_blank" rel="noopener" class="contact-item"><div class="contact-icon">📘</div><div><div class="contact-label">Facebook</div><div class="contact-value">fb.com/tmshakil.291</div></div></a>
+    <a href="https://www.fiverr.com/sellers/tmshakil/" target="_blank" rel="noopener" class="contact-item"><div class="contact-icon">🟢</div><div><div class="contact-label">Fiverr</div><div class="contact-value">fiverr.com/tmshakil</div></div></a>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 <a href="#hero">Tahsin Morshed Shakil</a> · Made with 💙 from Chattogram, Bangladesh</p>
-  <p style="margin-top: 0.4rem; font-size: 0.75rem;">CSE Student · Freelancer · Science Tutor · Aspiring Software Engineer</p>
+  <p>© 2025 <a href="index.html">Tahsin Morshed Shakil</a> · Made with 💙 from Chattogram, Bangladesh</p>
+  <p style="margin-top:0.4rem;font-size:0.75rem;">CSE Student · Freelancer · Science Tutor · Aspiring Software Engineer</p>
 </footer>
 
 <script>
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
+  const observer = new IntersectionObserver(e => e.forEach(el => { if(el.isIntersecting) el.target.classList.add('visible'); }), {threshold:0.1});
   reveals.forEach(r => observer.observe(r));
-
-  function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-
+  function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
   window.addEventListener('scroll', () => {
-    let current = '';
-    document.querySelectorAll('section[id]').forEach(s => {
-      if (window.scrollY >= s.offsetTop - 100) current = s.id;
-    });
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--blue-light)' : '';
-    });
+    let c = '';
+    document.querySelectorAll('section[id]').forEach(s => { if(window.scrollY >= s.offsetTop - 100) c = s.id; });
+    document.querySelectorAll('.nav-links a').forEach(a => { a.style.color = a.getAttribute('href')==='#'+c ? 'var(--blue-light)' : ''; });
   });
 </script>
 </body>

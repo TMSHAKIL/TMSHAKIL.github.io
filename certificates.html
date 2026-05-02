@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Certificates, Skill Badges & Exam Results of Tahsin Morshed Shakil — CSE Student, BGC Trust University Bangladesh.">
+<meta name="keywords" content="Tahsin Morshed Shakil certificates, TMSHAKIL results, BGC Trust CSE, skill certificates Bangladesh">
+<meta name="author" content="Tahsin Morshed Shakil">
+<title>Certificates & Results | Tahsin Morshed Shakil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root { --navy:#050d1a;--dark:#0a1628;--blue:#1a6fff;--blue-light:#4d8fff;--blue-glow:rgba(26,111,255,0.18);--cyan:#00c8ff;--white:#f0f5ff;--muted:#7a8fb0;--border:rgba(26,111,255,0.15);--card:rgba(15,32,64,0.7); }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.7;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(26,111,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(26,111,255,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;background:rgba(5,13,26,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:var(--blue);letter-spacing:2px;text-decoration:none;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.82rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s;}
+.nav-links a:hover,.nav-links a.active{color:var(--blue-light);}
+.nav-cta{background:var(--blue)!important;color:#fff!important;padding:0.45rem 1.1rem!important;border-radius:4px;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;}
+
+/* PAGE HERO */
+.page-hero{padding:8rem 5% 3rem;position:relative;z-index:1;}
+.page-label{font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:0.6rem;animation:fadeUp 0.7s ease both;}
+.page-title{font-family:'Syne',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.1;margin-bottom:1rem;animation:fadeUp 0.8s ease 0.1s both;}
+.page-title span{color:var(--blue);}
+.page-desc{color:var(--muted);font-size:0.95rem;max-width:560px;animation:fadeUp 0.8s ease 0.2s both;}
+
+/* TABS */
+.tabs-wrap{padding:0 5%;margin-bottom:0;position:sticky;top:62px;z-index:50;background:rgba(5,13,26,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.tabs{display:flex;gap:0;overflow-x:auto;}
+.tab-btn{background:none;border:none;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;padding:1rem 1.5rem;cursor:pointer;border-bottom:2px solid transparent;transition:color 0.3s,border-color 0.3s;white-space:nowrap;}
+.tab-btn.active{color:var(--blue-light);border-bottom-color:var(--blue);}
+.tab-btn:hover{color:var(--white);}
+
+/* CONTENT */
+.tab-content{display:none;padding:3rem 5%;position:relative;z-index:1;}
+.tab-content.active{display:block;}
+
+/* UPLOAD NOTICE */
+.upload-notice{background:rgba(26,111,255,0.08);border:1px dashed rgba(26,111,255,0.4);border-radius:12px;padding:2rem;text-align:center;margin-bottom:3rem;}
+.upload-notice h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--blue-light);}
+.upload-notice p{color:var(--muted);font-size:0.85rem;}
+.upload-notice code{background:rgba(26,111,255,0.15);padding:0.2rem 0.5rem;border-radius:4px;font-size:0.82rem;color:var(--cyan);}
+
+/* CERT GRID */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;}
+.cert-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color 0.3s,transform 0.3s;cursor:pointer;}
+.cert-card:hover{border-color:var(--blue);transform:translateY(-4px);}
+.cert-img-wrap{width:100%;height:180px;background:rgba(15,32,64,0.9);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.cert-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
+.cert-card:hover .cert-img-wrap img{transform:scale(1.04);}
+.cert-placeholder{display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--muted);}
+.cert-placeholder .icon{font-size:2.5rem;}
+.cert-placeholder p{font-size:0.78rem;text-align:center;}
+.cert-body{padding:1.2rem 1.4rem;}
+.cert-category{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--blue-light);margin-bottom:0.3rem;}
+.cert-title{font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;margin-bottom:0.3rem;}
+.cert-issuer{font-size:0.8rem;color:var(--muted);}
+.cert-year{font-size:0.75rem;color:var(--blue);margin-top:0.3rem;}
+
+/* LIGHTBOX */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:999;align-items:center;justify-content:center;padding:2rem;}
+#lightbox.open{display:flex;}
+#lightbox img{max-width:90vw;max-height:88vh;border-radius:8px;box-shadow:0 0 60px rgba(26,111,255,0.3);}
+#lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:var(--card);border:1px solid var(--border);color:var(--white);width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+
+/* SECTION LABEL */
+.sec-label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;padding-bottom:0.8rem;border-bottom:1px solid var(--border);}
+
+/* EXAM TABLE */
+.result-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:700px;margin-bottom:2rem;}
+.result-header{background:rgba(26,111,255,0.1);border-bottom:1px solid var(--border);padding:1rem 1.5rem;display:flex;align-items:center;gap:1rem;}
+.result-header .icon{font-size:1.5rem;}
+.result-exam{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;}
+.result-board{font-size:0.8rem;color:var(--muted);}
+.result-body{padding:0;}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1.5rem;border-bottom:1px solid var(--border);}
+.result-row:last-child{border-bottom:none;}
+.result-key{font-size:0.85rem;color:var(--muted);}
+.result-val{font-size:0.9rem;font-weight:600;color:var(--white);}
+.result-val.grade{color:var(--blue-light);}
+
+footer{text-align:center;padding:2rem 5%;border-top:1px solid var(--border);color:var(--muted);font-size:0.82rem;position:relative;z-index:1;}
+footer a{color:var(--blue-light);text-decoration:none;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(max-width:768px){
+  .nav-links{display:none;flex-direction:column;position:fixed;top:62px;left:0;right:0;background:var(--dark);padding:1.5rem 5%;border-bottom:1px solid var(--border);gap:1.2rem;}
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">TMS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="freelancing.html">Freelancing</a></li>
+    <li><a href="certificates.html" class="active">Certificates</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <p class="page-label">Achievements</p>
+  <h1 class="page-title">Certificates &amp; <span>Exam Results</span></h1>
+  <p class="page-desc">Academic results, skill certifications, and professional training achievements of Tahsin Morshed Shakil.</p>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('results')">📋 Exam Results</button>
+    <button class="tab-btn" onclick="switchTab('skills')">🏅 Skill Certificates</button>
+    <button class="tab-btn" onclick="switchTab('courses')">📚 Online Courses</button>
+  </div>
+</div>
+
+<!-- TAB: EXAM RESULTS -->
+<div class="tab-content active" id="tab-results">
+  <div class="upload-notice reveal">
+    <h3>📌 How to Add Your Result Images</h3>
+    <p>Upload your result screenshots to your GitHub repo and replace the <code>src</code> in the image tags below.<br>
+    File names should be like: <code>ssc-result.jpg</code>, <code>hsc-result.jpg</code></p>
+  </div>
+
+  <p class="sec-label reveal">Academic Examination Results</p>
+
+  <!-- SSC Result -->
+  <div class="result-card reveal">
+    <div class="result-header">
+      <div class="icon">🎓</div>
+      <div>
+        <div class="result-exam">SSC Examination</div>
+        <div class="result-board">Secondary School Certificate · Chattogram Board</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="result-row"><span class="result-key">Year</span><span class="result-val">— (add yours)</span></div>
+      <div class="result-row"><span class="result-key">Group</span><span class="result-val">Science</span></div>
+      <div class="result-row"><span class="result-key">GPA / Grade</span><span class="result-val grade">— (add yours)</span></div>
+      <div class="result-row"><span class="result-key">Result Image</span>
+        <span class="result-val">
+          <!-- REPLACE src WITH YOUR ACTUAL IMAGE after uploading to GitHub -->
+          <span style="color:var(--muted);font-size:0.82rem;">Upload ssc-result.jpg to GitHub → update src below</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Result image display area -->
+  <div class="cert-grid reveal" id="results-grid">
+    <!-- SSC result image card -->
+    <div class="cert-card" onclick="openLightbox('ssc-result.jpg')">
+      <div class="cert-img-wrap">
+        <!-- STEP: Upload ssc-result.jpg to GitHub and it will show here automatically -->
+        <img src="ssc-result.jpg" alt="SSC Result" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>📄</div><p>Upload ssc-result.jpg<br>to show here</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Board Exam</div>
+        <div class="cert-title">SSC Result Marksheet</div>
+        <div class="cert-issuer">Chattogram Education Board</div>
+      </div>
+    </div>
+
+    <!-- HSC result image card -->
+    <div class="cert-card" onclick="openLightbox('hsc-result.jpg')">
+      <div class="cert-img-wrap">
+        <img src="hsc-result.jpg" alt="HSC Result" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>📄</div><p>Upload hsc-result.jpg<br>to show here</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Board Exam</div>
+        <div class="cert-title">HSC Result Marksheet</div>
+        <div class="cert-issuer">Chattogram Education Board</div>
+      </div>
+    </div>
+
+    <!-- University result -->
+    <div class="cert-card" onclick="openLightbox('uni-result.jpg')">
+      <div class="cert-img-wrap">
+        <img src="uni-result.jpg" alt="University Result" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>🏛️</div><p>Upload uni-result.jpg<br>to show here</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">University</div>
+        <div class="cert-title">BGC Trust University Result</div>
+        <div class="cert-issuer">CSE Department · Semester Transcript</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB: SKILL CERTIFICATES -->
+<div class="tab-content" id="tab-skills">
+  <div class="upload-notice reveal">
+    <h3>📌 How to Add Your Certificate Images</h3>
+    <p>Upload certificate images to GitHub with names like <code>cert-excel.jpg</code>, <code>cert-seo.jpg</code>, <code>cert-python.jpg</code> etc.<br>
+    Then replace the <code>src</code> values in the image tags below.</p>
+  </div>
+
+  <p class="sec-label reveal">Professional Skill Certificates</p>
+
+  <div class="cert-grid reveal">
+    <div class="cert-card" onclick="openLightbox('cert-excel.jpg')">
+      <div class="cert-img-wrap">
+        <img src="cert-excel.jpg" alt="Excel Certificate" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>📊</div><p>Upload cert-excel.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Microsoft Office</div>
+        <div class="cert-title">Excel Certificate</div>
+        <div class="cert-issuer">Add issuer name</div>
+      </div>
+    </div>
+
+    <div class="cert-card" onclick="openLightbox('cert-seo.jpg')">
+      <div class="cert-img-wrap">
+        <img src="cert-seo.jpg" alt="SEO Certificate" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>🔍</div><p>Upload cert-seo.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Digital Marketing</div>
+        <div class="cert-title">SEO Certificate</div>
+        <div class="cert-issuer">Add issuer name</div>
+      </div>
+    </div>
+
+    <div class="cert-card" onclick="openLightbox('cert-python.jpg')">
+      <div class="cert-img-wrap">
+        <img src="cert-python.jpg" alt="Programming Certificate" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>💻</div><p>Upload cert-python.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Programming</div>
+        <div class="cert-title">Programming Certificate</div>
+        <div class="cert-issuer">Add issuer name</div>
+      </div>
+    </div>
+
+    <div class="cert-card" onclick="openLightbox('cert-extra.jpg')">
+      <div class="cert-img-wrap">
+        <img src="cert-extra.jpg" alt="Certificate" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>🏅</div><p>Upload cert-extra.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Other</div>
+        <div class="cert-title">Add Certificate Title</div>
+        <div class="cert-issuer">Add issuer name</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB: ONLINE COURSES -->
+<div class="tab-content" id="tab-courses">
+  <div class="upload-notice reveal">
+    <h3>📌 Add Your Online Course Completions</h3>
+    <p>Upload completion screenshots with names like <code>course-html.jpg</code>, <code>course-js.jpg</code> etc.</p>
+  </div>
+
+  <p class="sec-label reveal">Online Learning Completions</p>
+
+  <div class="cert-grid reveal">
+    <div class="cert-card" onclick="openLightbox('course-html.jpg')">
+      <div class="cert-img-wrap">
+        <img src="course-html.jpg" alt="HTML Course" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>🌐</div><p>Upload course-html.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Web Development</div>
+        <div class="cert-title">HTML & CSS</div>
+        <div class="cert-issuer">Add platform (W3Schools / Coursera etc.)</div>
+      </div>
+    </div>
+
+    <div class="cert-card" onclick="openLightbox('course-js.jpg')">
+      <div class="cert-img-wrap">
+        <img src="course-js.jpg" alt="JavaScript Course" onerror="this.parentElement.innerHTML='<div class=cert-placeholder><div class=icon>⚡</div><p>Upload course-js.jpg</p></div>'">
+      </div>
+      <div class="cert-body">
+        <div class="cert-category">Programming</div>
+        <div class="cert-title">JavaScript</div>
+        <div class="cert-issuer">Add platform name</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="Certificate Preview">
+</div>
+
+<footer>
+  <p>© 2025 <a href="index.html">Tahsin Morshed Shakil</a> · Chattogram, Bangladesh</p>
+</footer>
+
+<script>
+function toggleNav(){ document.getElementById('navLinks').classList.toggle('open'); }
+function switchTab(tab){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  event.target.classList.add('active');
+}
+function openLightbox(src){
+  const img = document.getElementById('lightbox-img');
+  img.src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(){ document.getElementById('lightbox').classList.remove('open'); }
+const observer = new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(r=>observer.observe(r));
+</script>
+</body>
+</html>
